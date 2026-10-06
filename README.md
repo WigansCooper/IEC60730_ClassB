@@ -1,0 +1,2 @@
+# IEC60730_ClassB
+IEC60730 ClassB 安全认证
