@@ -1,4 +1,5 @@
 #include "main.h"
+#include "IEC60730_Test.h"
 
 // 初始化独立看门狗：预分频64，重装载值4095（约1秒超时）
 int32_t iwdg_init(void) {
@@ -21,11 +22,14 @@ int main(void) {
 	
 	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
     
+    IEC60730_Test_Init();
+    
     iwdg_init();
     
     for(;;)
     {
         iwdg_reload();
+        IEC60730_Test_Handler();
     }
 }
 

@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_MD, USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>.\User;.\STM32F103C8T6\CMSIS\Core;.\STM32F103C8T6\CMSIS\Startup;.\STM32F103C8T6\CMSIS\System;.\STM32F103C8T6\STM32F10x_StdPeriph_Driver\Include</IncludePath>
+              <IncludePath>.\User;.\STM32F103C8T6\CMSIS\Core;.\STM32F103C8T6\CMSIS\Startup;.\STM32F103C8T6\CMSIS\System;.\STM32F103C8T6\STM32F10x_StdPeriph_Driver\Include;.\IEC60730_ClassB</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -568,6 +568,21 @@
               <FileName>stm32f10x_wwdg.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\STM32F103C8T6\STM32F10x_StdPeriph_Driver\Source\stm32f10x_wwdg.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>IEC60730_ClassB</GroupName>
+          <Files>
+            <File>
+              <FileName>IEC60730_Test.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\IEC60730_ClassB\IEC60730_Test.c</FilePath>
+            </File>
+            <File>
+              <FileName>IEC60730_FlashTest.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\IEC60730_ClassB\IEC60730_FlashTest.c</FilePath>
             </File>
           </Files>
         </Group>
